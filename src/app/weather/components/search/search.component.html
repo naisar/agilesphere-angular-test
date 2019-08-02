@@ -1,0 +1,12 @@
+<form class="form-inline mb-5">
+  <div class="form-group col-8 pl-0">
+    <input class="form-control mt-3 col city"
+           id="city"
+           name="city"
+           placeholder="City"
+           type="text"
+           [formControl]="cityControl"
+           required>
+  </div>
+  <button class="btn-search btn btn-primary mt-3 col-4" (click)="search()" id="search" type="submit" >Search</button>
+</form>
